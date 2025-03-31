@@ -22,5 +22,6 @@ body {
     align-items: center;
     gap: 1rem;
     position: fixed;
+    margin-box: 0;
 
 }
