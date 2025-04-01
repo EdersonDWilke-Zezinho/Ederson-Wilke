@@ -22,14 +22,16 @@ body {
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
-    
+
 }
-.menu{
+
+.menu {
     display: flex;
     list-style: none;
     gap: 3rem;
     justify-content: center;
 }
+
 .menu-link {
     text-decoration: none;
     color: beige;
@@ -37,6 +39,7 @@ body {
     position: relative;
     padding: 0.5rem 0;
 }
+
 .menu-link::after {
     content: '';
     height: 2px;
@@ -52,7 +55,8 @@ body {
 .menu-link:hover::after {
     width: 100%;
 }
-.inicio{
+
+.inicio {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,26 +64,31 @@ body {
     flex-direction: column;
 
 }
-.foto-perfil{
+
+.foto-perfil {
     width: 250px;
     height: 250px;
-    box-shadow: 38px 30px 29px 7px rgba(0,0,0,0.75);
+    box-shadow: 38px 30px 29px 7px rgba(0, 0, 0, 0.75);
     border-radius: 50%;
     border: 2px solid rgba(41, 41, 40, 0.137);
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
     margin-top: 1.2rem;
 }
-.sobre{
+
+.sobre {
     padding: 6rem 2rem;
 }
-.sobre-titulo{
+
+.sobre-titulo {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
-.sobre-conteudo{
+
+.sobre-conteudo {
     padding: 2rem 0;
     max-width: 600px;
     margin: 0 auto;
@@ -88,6 +97,43 @@ h1{
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
 }
-.sobre-paragrafo{
-text-align: center;
+
+.sobre-paragrafo {
+    text-align: center;
 }
+
+.projetos {
+    padding: 6rem 2rem;
+    
+    
+}
+.projetos-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-titulo {}
+
+.projetos-conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.img-projeto {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.projetos-nome {}
+
+.projetos-descricao {}
