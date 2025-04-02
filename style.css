@@ -30,6 +30,7 @@ body {
     list-style: none;
     gap: 3rem;
     justify-content: center;
+
 }
 
 .menu-link {
@@ -62,6 +63,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 
 }
 
@@ -71,6 +73,8 @@ body {
     box-shadow: 38px 30px 29px 7px rgba(0, 0, 0, 0.75);
     border-radius: 50%;
     border: 2px solid rgba(41, 41, 40, 0.137);
+   
+    
 }
 
 h1 {
@@ -86,10 +90,11 @@ h1 {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .sobre-conteudo {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 16px;
@@ -100,14 +105,16 @@ h1 {
 
 .sobre-paragrafo {
     text-align: center;
+    text-justify: auto;
 }
 
 .projetos {
     padding: 6rem 2rem;
-    
-    
+
+
 }
-.projetos-caixa{
+
+.projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
@@ -128,7 +135,10 @@ h1 {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .projetos-conteudo:hover {
     box-shadow: 0 10px 20px rgba(80, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.08);
@@ -150,31 +160,84 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     margin: 0 15px;
+    margin-bottom: 10px;
 }
-.habilidades{
+
+.habilidades {
     padding: 6rem 2rem;
+    min-height: 100vh
 
 }
-.habilidades-conteudo{
+
+.habilidades-titulo {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.habilidades-p {
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.habilidades-conteudo {
     max-width: 700px;
     margin: 0 auto;
     border-radius: 16px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     text-align: center;
 
 }
-.base-icone{
 
-    width: 154px;
+.base-icone {
+
+    width: 100px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
 }
-.icone{
-    height: 150px;
-    
+
+.icone {
+    height: 90px;
+}
+.contato{
+    padding: 6rem 2rem;
+}
+.contato-titulo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario-contato{
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: ;
+}
+.botao-contorno{
+ margin-bottom: 0.1rem;
+ text-align: center;
+}
+.botao-conteudo{
+width: 100%;
+padding: 0.5rem;
+background: rgba(83, 84, 113, 0.2);
+border-radius: 8px;
+color: rgb(121, 117, 117);
+border: 1px solid rgba(255, 255, 255, 0.1);
+outline: none;
+}
+.botao-conteudo:focus{
+    border-color: rgba(159, 167, 255, 0.641);
+}
+.formulario-contato:hover{
+box-shadow: 0 10px 20px rgba(17, 0, 255, 0.319);
+    transform: translateY(-5px) scale(1.04);
 }
