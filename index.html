@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
     <nav class="navegacao">
         <ul class="menu">
             <li>
@@ -32,12 +33,18 @@
     <main id="inicio" class="inicio">
         <img src="./img/eu.png" alt="foto do ederson wilke" class="foto-perfil">
         <h1>Ederson Wilke</h1>
-        <h2>Desenvolveor Web</h2>
+        <h2>Desenvolvedor Front-end</h2>
     </main>
     <section class="sobre" id="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-conteudo">
-            <p class="sobre-paragrafo">Desenvolvedor em formação, com foco sólido em front-end e aprofundamento contínuo em tecnologias como HTML, CSS, JavaScript e seus principais frameworks. Busco um domínio completo do ecossistema JavaScript, avançando para back-end, desenvolvimento de APIs, servidores e arquitetura de software. Além disso, estou expandindo meu conhecimento em Python para otimizar desempenho e escalabilidade. Meu objetivo é construir aplicações eficientes, bem estruturadas e preparadas para diferentes plataformas, sempre aplicando boas práticas, performance e visão estratégica no desenvolvimento.</p>
+            <p class="sobre-paragrafo">Desenvolvedor em formação, com foco sólido em front-end e aprofundamento contínuo
+                em tecnologias como HTML, CSS, JavaScript e seus principais frameworks. Busco um domínio completo do
+                ecossistema JavaScript, avançando para back-end, desenvolvimento de APIs, servidores e arquitetura de
+                software. Além disso, estou expandindo meu conhecimento em Python para otimizar desempenho e
+                escalabilidade. Meu objetivo é construir aplicações eficientes, bem estruturadas e preparadas para
+                diferentes plataformas, sempre aplicando boas práticas, performance e visão estratégica no
+                desenvolvimento.</p>
         </div>
 
     </section>
@@ -121,21 +128,21 @@
     <section class="contato" id="contato">
         <h2 class="contato-titulo">Contato</h2>
         <div class="contato-conteudo">
-            <form class="formulario-contato" id="formulario-contato">
+            <form class="formulario-contato" id="formulario-contato" onsubmit="enviarzap(event)">
                 <div class="botao-contorno">
-                    <input type="name" id="nome" placeholder="Nome" class="botao-conteudo">
+                    <input type="name" id="nome" placeholder="Nome" class="botao-conteudo" autocomplete="off">
                 </div>
                 <div class="botao-contorno">
-                    <input type="email" id="email" placeholder="E-mail" class="botao-conteudo">
+                    <input type="email" id="email" placeholder="E-mail" class="botao-conteudo" autocomplete="off">
                 </div>
                 <div class="botao-contorno">
-                    <input type="tel" id="telefone" placeholder="Telefone" class="botao-conteudo">
+                    <input type="tel" id="telefone" placeholder="Telefone" class="botao-conteudo" autocomplete="off">
                 </div>
                 <div class="botao-contorno">
-                    <textarea id="mensagem" placeholder="Escreva sua Mensagem" class="botao-conteudo"></textarea>
+                    <textarea id="mensagem" placeholder="Escreva sua Mensagem" class="botao-conteudo" autocomplete="off"></textarea>
                 </div>
-                <div class="botao-contorno">
-                    <button type="submit" class="botao-conteudo">Enviar</button>
+                <div>
+                    <button type="submit" class="botao-enviar">Enviar</button>
                 </div>
             </form>
         </div>
